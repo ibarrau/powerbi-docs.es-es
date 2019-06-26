@@ -54,28 +54,31 @@ Las áreas de trabajo nuevos, actualizados y áreas de trabajo clásicos existen
 
 ## <a name="roles-in-the-new-workspaces"></a>Roles en las nuevas áreas de trabajo
 
-Para conceder acceso a un área de trabajo, agregar usuarios o grupos de usuarios a uno de los roles de área de trabajo: los miembros, los colaboradores o los administradores. Todos los miembros de un grupo de usuarios obtienen el rol que haya definido. Si es un individuo en varios grupos de usuarios, obtienen el máximo nivel de permiso proporcionado por los roles que están asignados.
+Para conceder acceso a un área de trabajo, agregar usuarios o grupos de usuarios a uno de los roles de área de trabajo: los visores, los miembros, los colaboradores o los administradores. Todos los miembros de un grupo de usuarios obtienen el rol que haya definido. Si es un individuo en varios grupos de usuarios, obtienen el máximo nivel de permiso proporcionado por los roles que están asignados.
 
 Los roles le permiten administrar quién puede hacer qué en un área de trabajo, para que los equipos puedan colaborar. Las nuevas áreas de trabajo le permiten asignar roles a usuarios y grupos de usuarios: grupos de seguridad, grupos de Office 365 y listas de distribución. 
 
 Al asignar roles a un grupo de usuarios, cada uno de ellos tiene acceso al contenido. Si anida grupos de usuarios, todos los usuarios contenidos tienen permiso. Un usuario que se encuentra en varios grupos de usuarios con distintos roles obtiene el nivel de permiso mayor concedido a ellos. 
 
-Las nuevas áreas de trabajo ofrecen tres roles: administradores, miembros y colaboradores.
+Las nuevas áreas de trabajo ofrecen tres roles: administradores, miembros, colaboradores y visores.
 
-|Funcionalidad   | Administrador  | Miembro  | Colaborador  | 
-|---|---|---|---|
-| Actualizar y eliminar el área de trabajo.  | X  |   |   |
-| Agregar o quitar usuarios, incluidos otros administradores.  | X  |   |   |
-| Agregar miembros u otros usuarios con permisos inferiores.  |  X | X  |   |
-| Publicar y actualizar una aplicación. |  X | X  |   |
-| Compartir un elemento o compartir una aplicación. |  X | X  |   |
-| Permitir que otros usuarios vuelvan a compartir elementos. |  X | X  |   |
-| Crear, editar y eliminar contenido en el área de trabajo.  |  X | X  | X  |
-| Publicar informes en el área de trabajo, eliminar contenido. |  X | X  | X  |
+|Funcionalidad   | Administrador  | Miembro  | Colaborador  | Visor |
+|---|---|---|---|---|
+| Actualizar y eliminar el área de trabajo.  | X  |   |   |   |
+| Agregar o quitar usuarios, incluidos otros administradores.  | X  |   |   |   |
+| Agregar miembros u otros usuarios con permisos inferiores.  |  X | X  |   |   |
+| Publicar y actualizar una aplicación. |  X | X  |   |   |
+| Compartir un elemento o compartir una aplicación. |  X | X  |   |   |
+| Permitir que otros usuarios vuelvan a compartir elementos. |  X | X  |   |   |
+| Crear, editar y eliminar contenido en el área de trabajo.  |  X | X  | X  |   |
+| Publicar informes en el área de trabajo, eliminar contenido. |  X | X  | X  |   |
+| Ver un item. |  X | X  | X  | X |
  
  
 ## <a name="licensing"></a>Licencias
 Todos los usuarios que agregue a un área de trabajo necesitan una licencia de Power BI Pro. En el área de trabajo, estos usuarios pueden colaborar en paneles e informes que planee publicar para un público más amplio, o incluso para toda la organización. Si quiere distribuir contenido a otros usuarios dentro de la organización, puede asignar licencias de Power BI Pro a los usuarios o colocar el área de trabajo en una capacidad de Power BI Premium.
+
+Cuando el área de trabajo esta en una capacidad de Power BI Premium, los usuarios con el rol de Visor pueden acceder al área de trabajo incluso si no tienen una licencia de Power BI Pro. Sin embargo, si asigna a estos usuarios un rol más alto como administrador, miembro o colaborador, no podrán acceder al área de trabajo. Se les solicitará que inicien una versión de prueba Pro cuando intenten acceder al área de trabajo. Para aprovechar la capacidad del Visor para usuarios sin licencias Pro, asegúrese de que los usuarios en el rol de Visor no estén en otros roles de área de trabajo, ya sea individualmente o a través de un grupo de usuarios.
 
 > [!NOTE]
 > Publicar informes en la nueva experiencia de área de trabajo tiene existente de cumplimiento más estricto licencias reglas. Los usuarios que intentan publicar desde Power BI Desktop u otros clientes herramientas sin una licencia Pro aparece el error "sólo los usuarios con licencias de Power BI Pro pueden publicar en esta área de trabajo".
